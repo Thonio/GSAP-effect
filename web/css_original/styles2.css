@@ -2,71 +2,83 @@ body{
   font-family: Asap, Arial, Helvetica, sans-serif;
 }
 
+ul {
+  padding: 0;
+}
+
 ul li {
   list-style: none;
 }
 
-.container-menu {
-  width: 1200px;
-  margin: 0 auto;
-  text-align: center;
+.row li {
+  list-style: none;
+  /*min-height: 295px;*/
+  height: 50%;
+  padding: 0;
+  border: 7px solid #eee;
+  overflow: hidden;
+}
+
+.row li span {
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.row li p {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
 }
 
 .real {
-  position: relative;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0;
 }
 
 .real li {
   opacity: 0;
   position: absolute;
   width: 100%;
-  height: 750px;
-  background-size: cover;
+  height: 100%;
+  background-size: 100%;
   background-repeat: no-repeat;
+  background-position: center center;
 }
 
-.nav {
-  background-color: #fff;
+.link span {
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
 }
 
-.nav li {
-  width: 385px;
-  height: 267px;
-  display: inline-block;
-  position: relative;
-  margin: 5px;
-  background-color: #fff;
+.link:hover span {
+  transform: scale(1.1);
 }
 
-.nav li img {
-  width: 100%;
-  height: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.desactive {
+.desactive span {
   opacity: 0;
 }
 
-/* parallax */
-
-.container {
-  width: 700px;
-  margin: auto;
+.desactive p {
+  opacity: 0.3;
 }
 
-#resume, #pause {
-  display: inline-block;
+.magic {
+  border: 7px solid #eee;s
+  position: relative;
+  height: 100%;
+  margin-bottom: 0;
 }
 
-.matrix-box {
-  width: 300px;
-  display: inline-block;
-  border: 1px solid green;
-  padding: 5px;
-  margin: 5px;
-  height: 250px;
+.ext {
+  position: relative;
 }

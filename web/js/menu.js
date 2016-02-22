@@ -2,16 +2,18 @@ $(window).load(function () {
 
 	/* Menu Effect */
 
-	$('.nav li').mouseenter(function() {
-		$('.test').addClass('desactive');
-		$(this).children('.test').removeClass('desactive');
+	$('.magic li').mouseenter(function() {
+		$('.link').addClass('desactive');
+		$(this).children('.link').removeClass('desactive');
 		app($('.real li').eq(choosePic($(this))));
 	});
 
-	$('.nav li').mouseleave(function() {
-		$('.test').removeClass('desactive');
+	$('.magic li').mouseleave(function() {
+		$('.link').removeClass('desactive');
 		appRemove($('.real li'));
 	})
+
+	$('.ext').height($(window).height());
 
 	/* End Menu */
 
